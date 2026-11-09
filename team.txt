@@ -1,0 +1,65 @@
+========================================================================
+<<<<<<< HEAD
+CS213: Object Oriented Programming — Assignment 2 Team Information
+=======
+CS213: Object Oriented Programming - Assignment 2 Team Information
+>>>>>>> ce21678 (Sreenshots)
+Faculty of Computers and Artificial Intelligence, Cairo University
+========================================================================
+
+Course: CS213: Object Oriented Programming (Programming II)
+Semester: First Semester 2026-2027
+Instructor: Dr. Mohammad El-Ramly
+<<<<<<< HEAD
+Assignment: Assignment 2 (Vole Machine Simulator) - Version 4.1
+
+Section / Lab: General
+
+Team Leader:
+  Name: Ahmed Mohmed Fathi
+   ID: 20250060
+  Email: ahmed.zain@fcai.edu.eg
+  Phone: +20 100 000 0000
+=======
+Assignment: Assignment 2 (Vole Machine Simulator)
+
+Section / Lab: S1_S2
+
+Team Leader:
+  Name: Ahmed Mohmed Fathi
+  ID: 20250060
+  Email: 20250060@stud.fci-cu.edu.eg
+  Phone: 01008406180
+  Role (Part 2/3): Qt GUI and about one third of the C++ code
+>>>>>>> ce21678 (Sreenshots)
+
+Team Members:
+1. Name: Ahmed Mohmed Abd ElAzim
+   ID: 20250057
+<<<<<<< HEAD
+   Role: Initial Design & Sample Vole Programs & AI Consultations
+2. Name: Ahmed Mohmed Moaud Zain
+   ID: 20250063
+   Role: Design Synthesis & Report Documentation & Coordination
+3. Name: Abdullah Wael Mohie
+   ID: 20250391
+   Role: Final Architecture Refinements & PlantUML & Diagrams QA
+
+GitHub Repository:
+  URL: https://github.com/az967252-creator/assignment2
+=======
+   Email: 20250057@stud.fci-cu.edu.eg
+   Role: Initial Design & Sample Vole Programs & AI Consultations; part of the C++ code
+2. Name: Ahmed Mohmed Moaud Zain
+   ID: 20250063
+   Email: 20250063@stud.fci-cu.edu.eg
+   Role: Design Synthesis & Report Documentation & Coordination; about one quarter of the C++ code
+3. Name: Abdullah Wael Mohie
+   ID: 20250391
+   Email: 20250391@stud.fci-cu.edu.eg
+   Role: Final Architecture Refinements & PlantUML & Diagrams QA; part of the C++ code
+
+GitHub Repository:
+  URL: (add the repository link here)
+>>>>>>> ce21678 (Sreenshots)
+========================================================================
