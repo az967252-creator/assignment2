@@ -1,0 +1,7 @@
+; Test 16: Floating point addition (6RST)
+; Format: 1 sign bit, 3 exponent bits (excess-4), 4 mantissa bits (0.mmmm)
+2148 ; R1 = 0 100 1000 = 0.5
+2248 ; R2 = 0.5
+6312 ; R3 = R1 + R2 = 1.0 (0 101 1000 = 58 hex)
+33FF ; Print R3 (58)
+C000 ; Halt

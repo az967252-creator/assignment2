@@ -1,0 +1,12 @@
+; Test 15: 2 * 3 = 6
+2000 ; 00: R0 = 0
+2102 ; 02: R1 = 2 (multiplicand)
+2203 ; 04: R2 = 3 (multiplier)
+2300 ; 06: R3 = 0 (product)
+24FF ; 08: R4 = -1
+5331 ; 0A: R3 += R1
+5224 ; 0C: R2 += -1
+B212 ; 0E: If R2 == 0 jump to 12
+B00A ; 10: Else jump 0A
+33FF ; 12: Print R3 (06)
+C000 ; 14: Halt

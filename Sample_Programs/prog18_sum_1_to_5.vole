@@ -1,0 +1,16 @@
+; ------------------------------------------------------------
+; Vole Machine Program: Sum of 1 + 2 + 3 + 4 + 5
+; Result: 15 (0F hex) is written to the screen (address FF)
+; ------------------------------------------------------------
+2000 ; [00] R0 = 00 (zero, used by the jump comparisons)
+2100 ; [02] R1 = 00 (running sum)
+2201 ; [04] R2 = 01 (counter i)
+2301 ; [06] R3 = 01 (step)
+2406 ; [08] R4 = 06 (stop value)
+5112 ; [0A] loop: R1 = R1 + R2
+5223 ; [0C] R2 = R2 + R3 (i++)
+9524 ; [0E] R5 = R2 XOR R4 (zero when i == 6)
+B514 ; [10] if R5 == R0, jump to 14 (done)
+B00A ; [12] R0 == R0 always: jump back to 0A
+31FF ; [14] print R1
+C000 ; [16] halt

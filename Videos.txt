@@ -1,0 +1,7 @@
+CS213 Assignment 2 - Video links
+================================
+1) AI design process video (Part 1, ~10 min):
+   https://drive.google.com/file/d/1tbjRVmPvINsFUEC15UT9zDK8YTUTTR7y/view?usp=drive_link
+
+2) GUI video (public, explains the GUI and how to use it):
+   https://drive.google.com/file/d/1jHAdeTW2HS_LjZ3Ysps1e5R0bp-JES8F/view?usp=sharing

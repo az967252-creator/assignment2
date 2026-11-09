@@ -1,0 +1,6 @@
+; Test 8: Bitwise XOR (9RST)
+21FF ; R1 = FF
+22AA ; R2 = AA
+9312 ; R3 = R1 ^ R2 = 55
+33FF ; Print R3 (55)
+C000 ; Halt

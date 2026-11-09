@@ -1,0 +1,18 @@
+; ------------------------------------------------------------
+; Vole Machine Program: Maximum of two signed numbers
+; a = 18 hex (24), b = 24 hex (36). The larger value is shown.
+; ------------------------------------------------------------
+2000 ; [00] R0 = 00
+2118 ; [02] R1 = 18 (a)
+2224 ; [04] R2 = 24 (b)
+24FF ; [06] R4 = FF
+9324 ; [08] R3 = R2 XOR R4 (NOT b)
+2401 ; [0A] R4 = 01
+5334 ; [0C] R3 = R3 + R4 (-b, two's complement)
+5513 ; [0E] R5 = R1 + R3 (a - b)
+2680 ; [10] R6 = 80 (sign mask)
+8756 ; [12] R7 = R5 AND R6 (nonzero when a < b)
+B718 ; [14] if R7 == R0 (a >= b), jump to 18
+4021 ; [16] otherwise R1 = R2 (b is the maximum)
+31FF ; [18] print R1 (the maximum)
+C000 ; [1A] halt

@@ -1,0 +1,10 @@
+; Test 14: Subtraction using two's complement (10 - 4 = 6)
+200A ; R0 = 0A (10)
+2104 ; R1 = 04 (4)
+22FF ; R2 = FF
+9312 ; R3 = NOT R1 = FB
+2401 ; R4 = 01
+5534 ; R5 = -4 = FC
+5605 ; R6 = 10 + (-4) = 06
+36FF ; Print R6 (06)
+C000 ; Halt

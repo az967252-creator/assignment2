@@ -1,0 +1,19 @@
+; ------------------------------------------------------------
+; Vole Machine Program 2
+; Purpose: Multiply 3 * 4 = 12 by repeated addition and
+;          display the result on the screen.
+;          Demonstrates a loop using conditional JUMP.
+; Note: B0XY always jumps because R0 == R0 (unconditional jump).
+; ------------------------------------------------------------
+2103 ; [00] R1 = 03 (addend)
+2204 ; [02] R2 = 04 (loop counter)
+2300 ; [04] R3 = 00 (accumulator)
+24FF ; [06] R4 = FF (-1 in two's complement)
+2000 ; [08] R0 = 00 (zero for comparison)
+5331 ; [0A] R3 = R3 + R1 (accumulate)
+5224 ; [0C] R2 = R2 + R4 (counter--)
+B214 ; [0E] If R2 == R0, jump to 14 (done)
+B00A ; [10] Always jump back to 0A
+C000 ; [12] Safety halt (never reached)
+33FF ; [14] Print R3 (12 = 0C hex)
+C000 ; [16] Halt

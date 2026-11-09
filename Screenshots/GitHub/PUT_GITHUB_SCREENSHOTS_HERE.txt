@@ -1,0 +1,2 @@
+Replace this file with screenshots of the team's private GitHub repository
+(repository page, commits/contributors graph showing all four members, and the file list).
