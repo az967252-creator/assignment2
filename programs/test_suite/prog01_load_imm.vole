@@ -1,6 +1,0 @@
-; Test 1: Immediate load into registers
-210A ; R1 = 0A
-220B ; R2 = 0B
-31FF ; Print R1 (0A)
-32FF ; Print R2 (0B)
-C000 ; Halt

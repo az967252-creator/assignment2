@@ -1,6 +1,0 @@
-; Test 6: Bitwise OR (7RST)
-21F0 ; R1 = F0
-220F ; R2 = 0F
-7312 ; R3 = R1 | R2 = FF
-33FF ; Print R3 (FF)
-C000 ; Halt

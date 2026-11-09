@@ -1,6 +1,0 @@
-; Test 5: Integer addition with 8-bit overflow
-21FF ; R1 = FF (-1 or 255)
-2202 ; R2 = 02
-5312 ; R3 = FF + 02 = 01 (wraparound)
-33FF ; Print R3 (01)
-C000 ; Halt

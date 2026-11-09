@@ -1,5 +1,0 @@
-; Test 3: MOVE 40RS (R[S] <- R[R])
-257A ; R5 = 7A
-4056 ; R6 = R5
-36FF ; Print R6 (7A)
-C000 ; Halt

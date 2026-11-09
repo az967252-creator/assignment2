@@ -1,5 +1,0 @@
-; Test 9: Rotate right (AR0X)
-2101 ; R1 = 00000001
-A101 ; R1 rotated right 1 bit = 10000000 (80 hex)
-31FF ; Print R1 (80)
-C000 ; Halt

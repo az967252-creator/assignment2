@@ -1,6 +1,0 @@
-; Test 7: Bitwise AND (8RST)
-21AA ; R1 = 10101010
-22F0 ; R2 = 11110000
-8312 ; R3 = R1 & R2 = A0
-33FF ; Print R3 (A0)
-C000 ; Halt

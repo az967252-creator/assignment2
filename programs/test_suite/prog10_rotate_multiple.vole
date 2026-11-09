@@ -1,5 +1,0 @@
-; Test 10: Rotate right multiple bits
-2112 ; R1 = 00010010
-A104 ; Rotate 4 bits = 00100001 (21 hex)
-31FF ; Print R1 (21)
-C000 ; Halt

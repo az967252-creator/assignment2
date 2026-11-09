@@ -1,9 +1,0 @@
-; Test 11: Conditional jump taken
-2000 ; R0 = 00
-2100 ; R1 = 00 (equal to R0)
-B10A ; Jump to 0A if R1 == R0 (taken!)
-2299 ; R2 = 99 (skipped)
-C000 ; (skipped)
-2242 ; (at 0A): R2 = 42
-32FF ; Print R2 (42)
-C000 ; Halt

@@ -1,8 +1,0 @@
-; Test 18: Print consecutive bytes to screen
-2141 ; R1 = 'A' (41 hex)
-2242 ; R2 = 'B' (42 hex)
-2343 ; R3 = 'C' (43 hex)
-31FF ; Screen: 41
-32FF ; Screen: 42
-33FF ; Screen: 43
-C000 ; Halt

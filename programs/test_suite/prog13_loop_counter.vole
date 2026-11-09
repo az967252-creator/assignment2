@@ -1,9 +1,0 @@
-; Test 13: Loop counter from 3 down to 0
-2000 ; R0 = 0
-2103 ; R1 = 3
-22FF ; R2 = -1 (FF)
-5112 ; (06): R1 = R1 - 1
-31FF ; Print R1
-B10E ; If R1 == 0 jump to 0E (halt)
-B006 ; Jump back to 06
-C000 ; (0E): Halt

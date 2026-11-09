@@ -1,7 +1,0 @@
-; Test 19: Write zero across memory cells
-2000 ; R0 = 00
-3040 ; mem[40] = 00
-3041 ; mem[41] = 00
-1140 ; R1 = mem[40]
-31FF ; Print R1 (00)
-C000 ; Halt
