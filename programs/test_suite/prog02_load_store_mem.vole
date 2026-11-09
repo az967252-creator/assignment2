@@ -1,0 +1,6 @@
+; Test 2: Store to memory and load back
+2155 ; R1 = 55
+3130 ; mem[30] = 55
+1230 ; R2 = mem[30]
+32FF ; Print R2 (55)
+C000 ; Halt

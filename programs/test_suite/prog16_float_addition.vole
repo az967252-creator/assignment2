@@ -1,0 +1,6 @@
+; Test 16: Floating point addition (6RST)
+2140 ; R1 = 0 100 0000 = +0.5 * 2^0 = 0.5
+2240 ; R2 = 0.5
+6312 ; R3 = R1 + R2 = 1.0 (0 101 0000 = 50 hex)
+33FF ; Print R3 (50)
+C000 ; Halt

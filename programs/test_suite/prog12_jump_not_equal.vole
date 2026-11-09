@@ -1,0 +1,9 @@
+; Test 12: Conditional jump NOT taken
+2000 ; R0 = 00
+2105 ; R1 = 05 (not equal to R0)
+B10A ; Jump not taken
+2233 ; R2 = 33
+32FF ; Print R2 (33)
+C000 ; Halt
+2277 ; (at 0A): never reached
+C000 ; Halt

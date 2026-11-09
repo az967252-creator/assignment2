@@ -1,0 +1,41 @@
+; ------------------------------------------------------------
+; Vole Machine Program 2
+; Purpose: Multiply 3 * 4 = 12 by repeated addition
+;          and display the result on screen.
+;          Demonstrates looping with conditional JUMP.
+; Memory map (program starts at address 00):
+;   00: 2103  R1 = 03 (value to add each iteration)
+;   02: 2204  R2 = 04 (loop counter)
+;   04: 2300  R3 = 00 (accumulator, starts at 0)
+;   06: 24FF  R4 = FF (-1 for decrementing counter)
+;   08: 2000  R0 = 00 (zero reference for JUMP comparison)
+;   0A: 5331  R3 = R3 + R1 (accumulate: add 3)
+;   0C: 5224  R2 = R2 + R4 (decrement counter)
+;   0E: B20A  If R2 == R0 (counter==0), jump to HALT at 14... 
+;             wait, if equal jump to 14
+;             if not equal, continue to next instruction at 10
+;   10: B10A  If R1 == R0? R1=3, R0=0, not equal, so no jump
+;             Hmm, I need unconditional jump back to 0A
+;             Trick: copy R0's value into another register
+;   Actually let me redesign. R0 = 0 is the comparison base.
+;   To do unconditional jump: use B0XY (if R0 == R0, always true!)
+;   0A: 5331  R3 = R3 + R1
+;   0C: 5224  R2 = R2 + R4
+;   0E: B214  If R2 == R0, jump to 14 (halt)
+;   10: B00A  If R0 == R0, jump to 0A (always true = unconditional!)
+;   12: C000  (never reached, safety halt)
+;   14: 33FF  Store R3 to screen
+;   16: C000  Halt
+; ------------------------------------------------------------
+2103 ; R1 = 03 (addend)
+2204 ; R2 = 04 (counter)
+2300 ; R3 = 00 (accumulator)
+24FF ; R4 = FF (-1 in two's complement)
+2000 ; R0 = 00 (zero for comparison)
+5331 ; R3 = R3 + R1 (accumulate)
+5224 ; R2 = R2 + R4 (counter--)
+B214 ; If R2 == R0, jump to 14 (done, go store result)
+B00A ; If R0 == R0, jump to 0A (unconditional loop back)
+C000 ; Safety halt (never reached)
+33FF ; Store R3 to screen (result = 12 = 0C hex)
+C000 ; Halt

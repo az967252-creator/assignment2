@@ -1,0 +1,9 @@
+; Test 17: Swap R1 and R2 using XOR
+2112 ; R1 = 12
+2234 ; R2 = 34
+9112 ; R1 = R1 ^ R2
+9221 ; R2 = R2 ^ R1 = 12
+9112 ; R1 = R1 ^ R2 = 34
+31FF ; Print R1 (34)
+32FF ; Print R2 (12)
+C000 ; Halt
