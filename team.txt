@@ -60,6 +60,6 @@ GitHub Repository:
    Role: Final Architecture Refinements & PlantUML & Diagrams QA; part of the C++ code
 
 GitHub Repository:
-  URL: (add the repository link here)
+  URL: https://github.com/az967252-creator/assignment2
 >>>>>>> ce21678 (Sreenshots)
 ========================================================================
