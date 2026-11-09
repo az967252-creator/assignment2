@@ -10,7 +10,7 @@ Our implementation of the Vole machine assignment: a console simulator (Part 2) 
 | Path | Contents |
 | --- | --- |
 | `Report/` | The report with the updated (as-built) design, plus the original Part 1 report |
-| `Source/` | All C++ source code (simulator and GUI). Flat folder: no executables and no Qt libraries |
+| `cpp files/` | All C++ source code (simulator and GUI). Flat folder: no executables and no Qt libraries |
 | `Sample_Programs/` | 21 Vole programs (`.vole`) used for testing |
 | `Screenshots/` | `Console_10_programs/`, `GUI/`, and `GitHub/` |
 | `Videos.txt` | Links to the AI design video and the GUI video |
